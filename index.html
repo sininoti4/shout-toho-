@@ -144,7 +144,7 @@ function update() {
 
     // 雑魚敵
     const currentTheme = STAGE_THEMES[Math.min(stage, 6)];
-    if (!isBossMode && Math.random() < 0.05 + (stage * 0.01)) {
+    if (!isBossMode && Math.random() < 0.2 + (stage * 0.04)) {
         let ex = Math.random()*500;
         enemies.push({ x: ex, y: -20, originX: ex, vy: 10 + (stage*0.15), logic: currentTheme.logic, hitFlash: 0 });
     }
